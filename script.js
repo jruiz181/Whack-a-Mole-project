@@ -8,7 +8,7 @@ let lastHole;
 let timeUp = false;
 let score = 0;
 let countdown;
-let timeLimit = 2000
+let timeLimit = 20000;
 function pickRandomHole(holes) {
     const randomHole = Math.floor(Math.random() * holes.length);
     const hole = holes[randomHole];
@@ -48,7 +48,7 @@ function startGame() {
         if (countdown < 0){
             countdown = 0;
             clearInterval(startCountdown)
-            countdownBoard.textContent = 'Times Up!! Thanks for assaulting tiny yodas.';
+            countdownBoard.textContent = 'Times Up!! Thanks for playing.';
         }
     }, 1000)
 }
