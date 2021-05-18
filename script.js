@@ -32,7 +32,7 @@ function popOut(){
 }
 //step 3 dynamically change text content to countdown//
 function startGame() {
-    countdown = timeLimit/20;
+    countdown = timeLimit/100;
     scoreboard.textContent = 0;
     scoreboard.style.display = 'block';
     countdownBoard.textContent = countdown;
